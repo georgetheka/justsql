@@ -134,9 +134,6 @@ to define property-like fields that actually perform bidirectional binding and `
 to define the mapping type for each field. 
 
 ```python
-from poohpy.const import PyToSqLType
-from poohpy.sql import Table
-
 class Score(Table):
     def __init__(self):
         self._make('id', PyToSqlType.INT_SERIAL)
@@ -205,7 +202,3 @@ class Instrument(Table):
 ```
 
 See tests for full code examples.
- 
- 
-
-
